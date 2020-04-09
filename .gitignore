@@ -20,14 +20,15 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
+Podfile.lock
 
 # Android/IntelliJ
 #
-build/
 .idea
 .gradle
 local.properties
 *.iml
+yarn.lock
 
 # node.js
 #
