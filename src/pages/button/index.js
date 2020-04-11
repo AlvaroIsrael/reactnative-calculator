@@ -9,24 +9,21 @@ export default StyleSheet.create({
     height: Dimensions.get('window').width / 4,
     width: Dimensions.get('window').width / 4,
     padding: 20,
-    backgroundColor: '#787A7D',
     textAlign: 'center',
     borderWidth: 1,
     borderColor: '#525152',
     color: '#FFFFFF',
   },
-  operationButton: {
-    color: '#FFFFFF',
+  buttonGray: {
+    backgroundColor: '#787A7D',
+  },
+  buttonOrange: {
     backgroundColor: '#FF9E2D',
   },
-  operationButtonTop: {
-    color: '#FFFFFF',
+  buttonDarkGray: {
     backgroundColor: '#48494A',
   },
   buttonDouble: {
     width: (Dimensions.get('window').width / 4) * 2,
-  },
-  buttonTriple: {
-    width: (Dimensions.get('window').width / 4) * 3,
   },
 });

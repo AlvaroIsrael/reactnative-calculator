@@ -2,66 +2,47 @@ import React, {useState} from 'react';
 import {SafeAreaView, View, StatusBar, StyleSheet} from 'react-native';
 import Button from './pages/button/button';
 import Display from './pages/display/display';
-
-const css = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#525152',
-  },
-  buttons: {
-    flexDirection: 'row',
-    flexWrap: 'wrap',
-  },
-});
+import color from './utils/color';
+import css from './StyleGlobal';
 
 export default function App() {
 
   const [displayValue, setDisplayValue] = useState('0');
 
+  const buttons = [
+    {label: 'C', color: color.DARK_GRAY, size: 'single'},
+    {label: '+/-', color: color.DARK_GRAY, size: 'single'},
+    {label: '%', color: color.DARK_GRAY, size: 'single'},
+    {label: '÷', color: color.ORANGE, size: 'single'},
+    {label: '7', color: color.GRAY, size: 'single'},
+    {label: '8', color: color.GRAY, size: 'single'},
+    {label: '9', color: color.GRAY, size: 'single'},
+    {label: 'x', color: color.ORANGE, size: 'single'},
+    {label: '4', color: color.GRAY, size: 'single'},
+    {label: '5', color: color.GRAY, size: 'single'},
+    {label: '6', color: color.GRAY, size: 'single'},
+    {label: '-', color: color.ORANGE, size: 'single'},
+    {label: '1', color: color.GRAY, size: 'single'},
+    {label: '2', color: color.GRAY, size: 'single'},
+    {label: '3', color: color.GRAY, size: 'single'},
+    {label: '+', color: color.ORANGE, size: 'single'},
+    {label: '0', color: color.GRAY, size: 'double'},
+    {label: ',', color: color.GRAY, size: 'single'},
+    {label: '=', color: color.ORANGE, size: 'single'},
+  ];
+
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor="#525152"/>
+      <StatusBar barStyle='light-content' style={css.statusBar}/>
       <SafeAreaView style={css.container}>
         <Display value={displayValue}/>
         <View style={css.buttons}>
-          <Button label='C' operationTop onClick={() => {
-          }}/>
-          <Button label='+/-' operationTop onClick={() => {
-          }}/>
-          <Button label='%' operationTop onClick={() => {
-          }}/>
-          <Button label='÷' operation onClick={() => {
-          }}/>
-          <Button label='7' onClick={() => {
-          }}/>
-          <Button label='8' onClick={() => {
-          }}/>
-          <Button label='9' onClick={() => {
-          }}/>
-          <Button label='x' operation onClick={() => {
-          }}/>
-          <Button label='4' onClick={() => {
-          }}/>
-          <Button label='5' onClick={() => {
-          }}/>
-          <Button label='6' onClick={() => {
-          }}/>
-          <Button label='-' operation onClick={() => {
-          }}/>
-          <Button label='1' onClick={() => {
-          }}/>
-          <Button label='2' onClick={() => {
-          }}/>
-          <Button label='3' onClick={() => {
-          }}/>
-          <Button label='+' operation onClick={() => {
-          }}/>
-          <Button label='0' double onClick={() => {
-          }}/>
-          <Button label=',' onClick={() => {
-          }}/>
-          <Button label='=' operation onClick={() => {
-          }}/>
+          {buttons.map(buttonConfig => (
+            <Button key={buttonConfig.label}
+                    label={buttonConfig.label}
+                    color={buttonConfig.color}
+                    size={buttonConfig.size}/>
+          ))}
         </View>
       </SafeAreaView>
     </>
