@@ -8,7 +8,6 @@ import color from '../../utils/color';
 
 export default function Button(props) {
 
-
   const [displayValue, setDisplayValue] = useState('0');
 
   const operation = () => {
