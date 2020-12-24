@@ -9,7 +9,7 @@ Made with ❤️ by Alvaro Israel 👏🏻 [Get in touch!](https://www.linkedin.
 A simple calculator made with React Native.
 
 <div align="center">
-    <img  alt="React Native Calculator" src="https://github.com/AlvaroIsrael/reactnative-calculator/blob/main/src/images/calculator.png"/>
+    <img  alt="React Native Calculator" src="https://github.com/AlvaroIsrael/reactnative-calculator/blob/master/src/images/calculator.png"/>
 </div>
 
 ## 🏆 Technologies used
