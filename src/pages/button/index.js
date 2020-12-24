@@ -2,6 +2,7 @@ import {
   StyleSheet,
   Dimensions,
 } from 'react-native';
+import color from '../../utils/color';
 
 export default StyleSheet.create({
   button: {
@@ -11,17 +12,17 @@ export default StyleSheet.create({
     padding: 20,
     textAlign: 'center',
     borderWidth: 1,
-    borderColor: '#525152',
-    color: '#FFFFFF',
+    borderColor: color.MORTAR_GRAY,
+    color: color.WHITE,
   },
   buttonGray: {
-    backgroundColor: '#787A7D',
+    backgroundColor: color.BOULDER_GRAY,
   },
   buttonOrange: {
-    backgroundColor: '#FF9E2D',
+    backgroundColor: color.ORANGE,
   },
   buttonDarkGray: {
-    backgroundColor: '#48494A',
+    backgroundColor: color.TUNA_GRAY,
   },
   buttonDouble: {
     width: (Dimensions.get('window').width / 4) * 2,

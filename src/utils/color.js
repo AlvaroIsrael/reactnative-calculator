@@ -1,5 +1,7 @@
 export default {
   ORANGE: '#FF9E2D',
-  GRAY: '#787A7D',
-  DARK_GRAY: '48494A',
+  BOULDER_GRAY: '#787A7D',
+  TUNA_GRAY: '#48494A',
+  MORTAR_GRAY: '#525152',
+  WHITE: '#FFFFFF',
 };

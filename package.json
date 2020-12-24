@@ -29,5 +29,9 @@
     "jest": "^25.2.7",
     "metro-react-native-babel-preset": "^0.59.0",
     "react-test-renderer": "16.11.0"
+  },
+  "resolutions": {
+    "@react-native-community/viewpager": "4.1.0",
+    "react-native-webview": "10.10.0"
   }
 }
