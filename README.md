@@ -2,14 +2,15 @@
     📟 React Native Calculator
 </h1>
 
-Made with ❤️ by Alvaro Israel 👏🏻 [Get in touch!](https://www.linkedin.com/in/alvaroisraeldesenvolvedor/)
+<h4 align='center'>Made with ❤️ by Alvaro Israel 👏🏻 <a href='https://www.linkedin.com/in/alvaroisraeldesenvolvedor/'>
+Get in Touch!</a></h4>
 
 ## 🗃 What is it?
 
 A simple calculator made with React Native.
 
 <div align="center">
-    <img  alt="React Native Calculator" src="https://github.com/AlvaroIsrael/reactnative-calculator/blob/master/src/images/calculator.png"/>
+    <img  alt="React Native Calculator" width='400' src="https://github.com/AlvaroIsrael/reactnative-calculator/blob/master/src/images/calculator.png"/>
 </div>
 
 ## 🏆 Technologies used
@@ -42,7 +43,7 @@ yarn ios
 4. Push to the branch (`git push origin feature/myAewsomeFeature`)
 5. Create a new Pull Request
 
-## Show your support
+## ⭐️ Show your support
 
 Hit the ⭐️ button if you like this project!
 
