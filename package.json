@@ -11,13 +11,13 @@
   },
   "dependencies": {
     "@testing-library/jest-native": "^3.1.0",
-    "@types/jest": "^25.2.1",
-    "axios": "^0.19.2",
-    "axios-mock-adapter": "^1.18.1",
+    "axios": "^0.21.1",
+    "axios-mock-adapter": "^1.19.0",
     "react": "16.11.0",
     "react-native": "0.62.1"
   },
   "devDependencies": {
+    "@types/jest": "^25.2.1",
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-transform-flow-strip-types": "^7.9.0",
